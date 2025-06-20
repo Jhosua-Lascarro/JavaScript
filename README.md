@@ -6,5 +6,5 @@ A dynamic repository for JavaScript practice, regularly updated with exercises, 
 
 | Project                                         | Link                          |
 |-------------------------------------------------|-------------------------------|
-| Practical Algorithm Exercises in JavaScript      | [View project](./calculadora) |
-| Interactive Message System                      | [View project](./algoritmia)  |
+| Practical Algorithm Exercises in JavaScript      | [View project](https://github.com/Jhosua-Lascarro/JavaScript/tree/main/Module/Basic/Interactive%20Message%20System) |
+| Interactive Message System                      | [View project](https://github.com/Jhosua-Lascarro/JavaScript/tree/main/Module/Ejercicios)  |
