@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Ejercicios Prácticos de JavaScript</title>
+  </head>
+  <body>
+    <h1>Ejercicios Prácticos de JavaScript</h1>
+    <p>Todos los ejercicios se pueden ejecutar en la consola del navegador.</p>
+    <h2>Variables y Operaciones Básicas</h2>
+    <div class="cards-container">
+      <div class="card">
+        <p>1. Mostrar 'Jhosua' en consola:</p>
+        <button onclick="mostrarNombre()">Mostrar nombre</button>
+      </div>
+      <div class="card">
+        <p>2. Calcular el área de un rectángulo (base=10, altura=5):</p>
+        <button onclick="calcularArea()">Calcular Área</button>
+      </div>
+      <div class="card">
+        <p>3. Intercambiar valores de dos variables (a=10, b=5):</p>
+        <button onclick="intercambiarValores()">Intercambiar Valores</button>
+      </div>
+    </div>
+
+    <h2>Condicionales</h2>
+    <div class="cards-container">
+      <div class="card">
+        <p>4. Mostrar si eres mayor o menor de edad (edad=20):</p>
+        <button onclick="mostrarEdad()">Mostrar Edad</button>
+      </div>
+      <div class="card">
+        <p>5. Validar acceso (usuario="admin", contraseña="1234"):</p>
+        <button onclick="validarAcceso()">Validar Acceso</button>
+      </div>
+      <div class="card">
+        <p>6. Verificar si un número está entre 10 y 50 (número=30):</p>
+        <button onclick="verificarNumero()">Verificar Número</button>
+      </div>
+      <div class="card">
+        <p>7. Mostrar calificación según nota (nota=7):</p>
+        <button onclick="mostrarNota()">Mostrar Nota</button>
+      </div>
+      <div class="card">
+        <p>8. Mostrar el día de la semana (día=3):</p>
+        <button onclick="mostrarDia()">Mostrar Día</button>
+      </div>
+      <div class="card">
+        <p>
+          9. Calcular operación entre dos números (num1=10, num2=5,
+          operación="sumar"):
+        </p>
+        <button onclick="calcular()">Calcular Operación</button>
+      </div>
+    </div>
+
+    <h2>Ciclos</h2>
+    <div class="cards-container">
+      <div class="card">
+        <p>10. Mostrar números del 1 al 10 con for:</p>
+        <button onclick="mostrarNumeros()">Mostrar Números 1-10</button>
+      </div>
+      <div class="card">
+        <p>11. Mostrar números pares del 1 al 20 con for:</p>
+        <button onclick="mostrarNumerosPares()">Mostrar Números Pares</button>
+      </div>
+      <div class="card">
+        <p>12. Calcular suma del 1 hasta n (n=10) con for:</p>
+        <button onclick="calcularSuma()">Calcular Suma hasta n</button>
+      </div>
+      <div class="card">
+        <p>13. Mostrar números del 1 al 5 con while:</p>
+        <button onclick="mostrarNumerosWhile()">Mostrar Números While</button>
+      </div>
+      <div class="card">
+        <p>
+          14. Simular intentos hasta adivinar un número secreto (secreto=7):
+        </p>
+        <button onclick="simularIntento()">Simular Intento (Secreto)</button>
+      </div>
+      <div class="card">
+        <p>15. Sumar números hasta superar 100 con while:</p>
+        <button onclick="sumarNumeros()">Sumar hasta 100</button>
+      </div>
+      <div class="card">
+        <p>16. Mostrar números del 1 al 5 con do...while:</p>
+        <button onclick="mostrarNumerosDoWhile()">
+          Mostrar Números Do...While
+        </button>
+      </div>
+      <div class="card">
+        <p>17. Simular intentos de contraseña (contraseña="1234"):</p>
+        <button onclick="simularIntentoContrasena()">
+          Simular Intento Contraseña
+        </button>
+      </div>
+      <div class="card">
+        <p>18. Solicitar contraseña hasta acertar (simulado):</p>
+        <button onclick="solicitarContrasena()">Solicitar Contraseña</button>
+      </div>
+      <div class="card">
+        <p>19. Simular menú en consola hasta elegir "Salir":</p>
+        <button onclick="mostrarMenu()">Mostrar Menú</button>
+      </div>
+    </div>
+
+    <h2>Funciones</h2>
+    <div class="cards-container">
+      <div class="card">
+        <p>20. Saludar a una persona (nombre="Jhosua"):</p>
+        <button onclick="saludar('Jhosua')">Saludar</button>
+      </div>
+      <div class="card">
+        <p>21. Calcular el cuadrado de un número (4):</p>
+        <button onclick="cuadrado(4)">Cuadrado de 4</button>
+      </div>
+      <div class="card">
+        <p>22. Verificar si un número es primo (7):</p>
+        <button onclick="esPrimo(7)">¿Es Primo?</button>
+      </div>
+      <div class="card">
+        <p>23. Sumar dos números (3 + 5):</p>
+        <button onclick="sumar(3, 5)">Sumar 3 + 5</button>
+      </div>
+      <div class="card">
+        <p>24. Verificar si un número es par (8):</p>
+        <button onclick="esPar(8)">¿Es Par?</button>
+      </div>
+      <div class="card">
+        <p>25. Contar vocales en "hola mundo":</p>
+        <button onclick="console.log(contarVocales('hola mundo'))">
+          Contar Vocales
+        </button>
+      </div>
+    </div>
+
+    <h2>Arrays y Objetos</h2>
+    <div class="cards-container">
+      <div class="card">
+        <p>26. Mostrar frutas, agregar una y mostrar el array:</p>
+        <button onclick="mostrarFrutas()">Mostrar Frutas</button>
+      </div>
+      <div class="card">
+        <p>27. Mostrar datos de una persona:</p>
+        <button onclick="mostrarPersona()">Mostrar Persona</button>
+      </div>
+      <div class="card">
+        <p>28. Mostrar estudiantes y sus notas:</p>
+        <button onclick="mostrarEstudiantes()">Mostrar Estudiantes</button>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
