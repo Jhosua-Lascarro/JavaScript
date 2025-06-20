@@ -1,17 +1,24 @@
 // index.js
 
 // imports
-import { processDataUser } from "./process.js";
+import { getUserMessage } from "./message.js";
 
-const form = document.getElementById("userForm");
-const resultContainer = document.getElementById("result");
+const userForm = document.getElementById("userForm");
+const nameInput = document.getElementById("name");
+const ageInput = document.getElementById("age");
+const result = document.getElementById("result");
 
-// Add an event listener to the form to handle submission
-form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Prevent the default form submission behavior
+// Event listener for form submission
+userForm.addEventListener("submit", (event) => {
+  event.preventDefault(); // Prevent form submission
 
-  const name = document.getElementById("name").value;
-  const age = parseInt(document.getElementById("age").value);
+  const userName = nameInput.value.trim();
+  const userAge = parseInt(ageInput.value, 10);
 
-  resultContainer.innerHTML = processDataUser(name, age);
+  if (userName && !isNaN(userAge)) {
+    const message = getUserMessage(userName, userAge);
+    result.innerHTML = `<h2>${message}</h2>`;
+  } else {
+    result.innerHTML = "<h2>Please enter a valid name and age.</h2>";
+  }
 });
