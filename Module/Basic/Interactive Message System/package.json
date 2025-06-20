@@ -1,0 +1,17 @@
+{
+  "name": "interactive-message-system",
+  "version": "1.1.0",
+  "description": "A simple JavaScript app that displays personalized messages based on user input (name and age).",
+  "main": "src/scripts/index.js",
+  "scripts": {
+    "start": "echo 'Open src/pages/index.html in your browser.'",
+    "test": "node --test src/tests/index.test.js"
+  },
+  "author": "Jhosua",
+  "license": "ISC",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
