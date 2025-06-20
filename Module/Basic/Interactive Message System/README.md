@@ -2,6 +2,19 @@
 
 # Interactive Message System
 
+![page screenshot](src/assets/adult.png)
+
+## Table of Contents
+
+- [Interactive Message System](#interactive-message-system)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [How it works](#how-it-works)
+  - [Project Structure](#project-structure)
+  - [Requirements](#requirements)
+  - [Usage](#usage)
+  - [Testing](#testing)
+
 ## Description
 
 A JavaScript application that asks the user for their **name** and **age**, displaying personalized messages based on the entered age.
@@ -22,19 +35,25 @@ Interactive Message System/
 ├── README.md
 └── src/
     ├── pages/
-    │   ├── form.html
     │   └── index.html
     ├── scripts/
     │   ├── index.js
-    │   └── process.js
-    └── styles/
-        └── index.css
+    │   └── message.js
+    ├── tests/
+    │   └── index.test.js
+    ├── styles/
+    │   └── index.css
+    └── assets/
+        ├── adult.png
+        ├── invalid.png
+        └── minor.png
 ```
 
-- `index.html` and `form.html`: User interface.
-- `index.js`: Main interaction logic.
-- `process.js`: Processes and displays messages based on age.
+- `index.html`: User interface.
+- `index.js`: Logic for handling user input and displaying the result.
+- `message.js`: Logic for generating personalized messages.
 - `styles/`: CSS styles for the application.
+- `assets/`: Images for the application.
 
 ## Requirements
 
@@ -46,3 +65,17 @@ Interactive Message System/
 
 1. Open `src/pages/index.html` in your browser.
 2. Enter the requested data and check the displayed message.
+
+## Testing
+
+To run the tests for the message logic:
+
+1. Make sure you have [Node.js](https://nodejs.org/) installed.
+2. Open a terminal in the project root directory.
+3. Run:
+
+   ```sh
+   npm test
+   ```
+
+This will execute the test cases for the message functions and show the results in the terminal.
