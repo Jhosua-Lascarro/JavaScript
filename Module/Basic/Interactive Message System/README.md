@@ -2,8 +2,6 @@
 
 # Interactive Message System
 
-## Description
-
 A JavaScript application that asks the user for their **name** and **age**, displaying personalized messages based on the entered age.
 
 ## How it works
