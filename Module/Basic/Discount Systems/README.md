@@ -1,80 +1,78 @@
+<!-- README.md -->
+
 # Discount Systems
 
-A modern, minimalist web application for calculating customer discounts based on client type and purchase amount.
+![page screenshot](src/assets/discount-preview.png)
+
+## Table of Contents
+
+- [Discount Systems](#discount-systems)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [How it works](#how-it-works)
+  - [Project Structure](#project-structure)
+  - [Requirements](#requirements)
+  - [Usage](#usage)
+  - [Features](#features)
 
 ## Description
 
-This is a client-side discount calculator that applies different discount rates based on customer classification. The application features a clean, modern interface with smooth animations and responsive design.
+A modern, minimalist web application for calculating customer discounts based on client type and purchase amount. The application features a clean interface with smooth animations and responsive design.
 
-### Features
+## How it works
+
+1. The user enters their name, selects customer type, and inputs the purchase amount.
+2. The system validates the input and applies discount rules:
+   - **New customers**: No discount (0%)
+   - **Regular customers**: 5% discount for purchases ≥ $100,000, otherwise 0%
+   - **VIP customers**: 15% discount on any purchase
+3. The result is displayed showing the original amount, discount applied, and final price.
+
+## Project Structure
+
+```plaintext
+Discount Systems/
+├── README.md
+└── src/
+    ├── index.html          # Main HTML file with user interface
+    ├── scripts/
+    │   ├── main.js         # Entry point and initialization
+    │   └── modules/
+    │       ├── logic.js    # Form handling and event management
+    │       └── process.js  # Discount calculation logic
+    ├── styles/
+    │   └── global.css      # All styling and responsive design
+    └── assets/
+        └── discount-preview.png
+```
+
+- `index.html`: User interface with form inputs and result display.
+- `main.js`: Application initialization and module coordination.
+- `logic.js`: Form event handling and data processing.
+- `process.js`: Discount calculation algorithms and business logic.
+- `global.css`: Modern styling with animations and responsive design.
+
+## Requirements
+
+- Modern web browser with JavaScript support.
+- Clean, modular code architecture with proper separation of concerns.
+- Responsive design that works on desktop and mobile devices.
+- Form validation and error handling for user inputs.
+
+## Usage
+
+1. Open `src/index.html` in your web browser.
+2. Fill in the required information:
+   - Enter your name
+   - Select customer type (New, Regular, or VIP)
+   - Input purchase amount
+3. Click submit to see the discount calculation and final price.
+
+## Features
 
 - **Customer Classification**: Support for New, Regular, and VIP customers
 - **Dynamic Discount Calculation**: Automatic discount application based on customer type and purchase amount
 - **Modern UI**: Clean, minimalist design with smooth animations
 - **Responsive Design**: Works perfectly on desktop and mobile devices
 - **Real-time Results**: Instant calculation display without page refresh
-
-## Project Structure
-
-```text
-Discount Systems/
-├── README.md
-├── src/
-│   ├── index.html          # Main HTML file
-│   ├── scripts/
-│   │   ├── main.js         # Entry point and initialization
-│   │   └── modules/
-│   │       ├── logic.js    # Form handling and event management
-│   │       └── process.js  # Discount calculation logic
-│   └── styles/
-│       └── global.css      # All styling and responsive design
-```
-
-## How to Run
-
-Simply open `src/index.html` directly in your web browser.
-
-## How It Works
-
-### Discount Rules
-
-The application applies discounts based on the following criteria:
-
-| Customer Type | Condition | Discount Rate |
-|---------------|-----------|---------------|
-| **New** | Any purchase | 0% |
-| **Regular** | Purchase ≥ $100,000 | 5% |
-| **Regular** | Purchase < $100,000 | 0% |
-| **VIP** | Any purchase | 15% |
-
-### Application Flow
-
-1. **User Input**: Customer enters their name, selects client type, and inputs purchase amount
-2. **Form Validation**: HTML5 validation ensures all fields are completed
-3. **Discount Calculation**: JavaScript processes the data using the discount rules
-4. **Result Display**: The application shows a detailed summary including:
-   - Customer name and type
-   - Original purchase amount
-   - Applied discount percentage
-   - Final amount after discount
-
-#### Code Organization
-
-- **Modular Architecture**: Separation of concerns with dedicated modules
-- **Event-Driven**: Form submission handled with modern event listeners
-- **Functional Programming**: Pure functions for calculations
-- **Error Handling**: Graceful handling of invalid inputs
-
-#### Key Functions
-
-```javascript
-// Main form processing
-processForm() // Handles form submission and data extraction
-
-// Discount calculation
-resultForm(userName, clientType, cost) // Calculates and displays results
-```
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+- **Modular Architecture**: Organized code structure for maintainability
